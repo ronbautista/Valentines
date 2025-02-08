@@ -1,0 +1,65 @@
+body{
+
+    font-size: 2rem;
+    background-color: #e5bae5;
+}
+@font-face {
+    font-family: 'jabol'; /* Name of the font */
+    src: url('fonts/kiss.ttf') format('truetype'), /* Path to the TTF file */
+         url('fonts/jabol.otf') format('opentype'); /* Path to the OTF file */
+}
+
+#image{
+  width: 50%;
+    border-radius: 10px;
+}
+#image:hover{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.clicked{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    animation-name: zoomOut;
+    animation-duration: 3s;}
+
+    #hotdogs{
+        display: none; /* Initially hidden */
+        
+     
+    }
+
+#hotdogs h2{
+    animation-name: zoomIn;
+    font-size: 2rem;
+    height: 20%;
+    font-family: jabol;
+    src: url(fonts/jabol.otf);
+}
+
+  .shared-styles{
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Ensures items are stacked */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    
+    position: absolute; /* Positions it relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves it back by half its width/height */
+    
+    height: 70vh; /* Adjust this to control the box size */
+    width: 30%; /* Adjust as needed */
+    background-color: #eec3b4; /* Just for visibility */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
