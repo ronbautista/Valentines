@@ -9,7 +9,7 @@ document.getElementById("image").onclick = function() {
         setTimeout(() => {
             this.style.display = "none";  // Hide the image
             hotdogs.style.display = "block"; // Show the hotdog
-        }, 3000); // Matches animation duration (1s)
+        }, 2000); // Matches animation duration (1s)
         
         isClicked = true;
     }
